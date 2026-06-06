@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { Calculator, Users, Briefcase, FileText, Activity, Settings, LogOut, Sun, Menu, X } from 'lucide-react'
+import { Calculator, Users, Briefcase, FileText, Activity, Settings, LogOut, Sun, Menu, X, BarChart2 } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 
 const nav = [
@@ -12,6 +12,7 @@ const nav = [
   { label: 'Projects', href: '/projects', icon: Briefcase },
   { label: 'Proposals', href: '/proposals', icon: FileText },
   { label: 'Monitoring', href: '/monitoring', icon: Activity },
+  { label: 'Solar Data', href: '/solar-assessment', icon: BarChart2 },
   { label: 'Settings', href: '/settings', icon: Settings },
 ]
 
